@@ -1,7 +1,6 @@
 package com.restful.tutorial.api_model.employee_API_model.get_API_model.responce;
 
 import com.restful.tutorial.api_model.ShiftAPIModel;
-import com.restful.tutorial.api_model.TaskAPIModel;
 
 public class ResponceShiftAssignmentAPIModel {
 
