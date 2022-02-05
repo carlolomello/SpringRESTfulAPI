@@ -31,5 +31,4 @@ public class RoleService {
     public void deleteRole(String roleEntity) {
     	roleRepository.deleteById(roleEntity);
     }
-
 }

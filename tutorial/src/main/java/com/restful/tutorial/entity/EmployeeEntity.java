@@ -42,7 +42,6 @@ public class EmployeeEntity {
 				mappedBy = "employee")
 		private List<ContactEntity> contactList = new ArrayList<ContactEntity>();
 		
-		
 		@ManyToOne(fetch = FetchType.LAZY, 
 				cascade = CascadeType.PERSIST,
 				targetEntity = RoleEntity.class)
@@ -106,19 +105,6 @@ public class EmployeeEntity {
 			this.place = place;
 		}
 
-		/*
-		@JsonManagedReference
-		public Set<ContactEntity> getContactList() {
-			return contactList;
-		}
-
-		public void setContactList(Set<ContactEntity> contactList) {
-			this.contactList = contactList;
-		}
-		*/
-		
-
-		//@JsonBackReference
 		public RoleEntity getRole() {
 			return role;
 		}
@@ -135,7 +121,6 @@ public class EmployeeEntity {
 			this.role = role;
 		}
 
-		@JsonManagedReference
 		public List<ShiftEntity> getShiftList() {
 			return shiftList;
 		}
@@ -144,7 +129,6 @@ public class EmployeeEntity {
 			this.shiftList = shiftList;
 		}
 
-		@JsonManagedReference
 		public List<TaskEntity> getTaskList() {
 			return taskList;
 		}
@@ -152,7 +136,5 @@ public class EmployeeEntity {
 		public void setTaskList(List<TaskEntity> taskList) {
 			this.taskList = taskList;
 		}
-		
-		
 
 }

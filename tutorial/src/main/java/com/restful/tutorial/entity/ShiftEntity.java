@@ -72,7 +72,6 @@ public class ShiftEntity {
 		this.endTime = endTime;
 	}
 
-	@JsonBackReference
 	public Set<EmployeeEntity> getEmployeeList() {
 		return employeeList;
 	}

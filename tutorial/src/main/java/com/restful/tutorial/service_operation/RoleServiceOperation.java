@@ -53,5 +53,4 @@ public class RoleServiceOperation {
 			throw new NoSuchElementException(" ERROR: role "+role.getRoleName()+" not foud"); 	
 		}
 	}
-	
 }

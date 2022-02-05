@@ -8,7 +8,6 @@ import com.restful.tutorial.api_model.role_API_model.get_API_model.EmployeeForRo
 public class RoleAPIModel {
 
 	private String roleName;
-
 	private double salary;
 
 	private List<EmployeeForRoleAPIModel> employeeList = new ArrayList<EmployeeForRoleAPIModel>();
@@ -37,6 +36,4 @@ public class RoleAPIModel {
 		this.employeeList = employeeList;
 	}
 
-	
-	
 }

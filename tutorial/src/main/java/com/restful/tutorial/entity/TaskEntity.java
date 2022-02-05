@@ -62,7 +62,6 @@ public class TaskEntity {
 		this.deadline = deadline;
 	}
 
-	@JsonBackReference
 	public Set<EmployeeEntity> getEmployeeList() {
 		return employeeList;
 	}

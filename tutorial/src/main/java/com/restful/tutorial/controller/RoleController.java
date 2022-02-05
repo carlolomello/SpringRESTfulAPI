@@ -20,13 +20,10 @@ public class RoleController {
 	@Autowired
     private RoleServiceOperation service;
 	
-
-
     @GetMapping("/role_list")
     public List<RoleAPIModel> list() {
         return service.getRoleList();
     }
-    
     
     @DeleteMapping("/delete_role")
     public void deleteById(@RequestBody String roleName) {
@@ -38,7 +35,6 @@ public class RoleController {
     	return service.getRoleByRoleName(roleName);
     }
     
-    
     @PostMapping("/insert_role")
     public RequestSaveRoleAPIModel saveR(@RequestBody RequestSaveRoleAPIModel roleAPI){
     	return service.saveRole(roleAPI);
@@ -48,7 +44,5 @@ public class RoleController {
     public RequestSaveRoleAPIModel updateR(@RequestBody RequestSaveRoleAPIModel roleAPI){
     	return service.updateRole(roleAPI);
     }
-    
-    
     
 }
